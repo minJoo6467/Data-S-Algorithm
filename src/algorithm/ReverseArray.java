@@ -1,11 +1,11 @@
-package doIt2;
+package algorithm;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class ReverseArray {
 
-	//¹è¿­ÀÇ ¿ä¼Ò a[idx1]¿Í a[idx2]¸¦ ±³È¯
+	//ë°°ì—´ì˜ ìš”ì†Œ a[idx1]ì™€ a[idx2]ë¥¼ êµí™˜
 	static void swap(int[]a , int idx1, int idx2) {
 		int t = a[idx1]; 
 		a[idx1] = a[idx2]; 
@@ -13,7 +13,7 @@ public class ReverseArray {
 	}
 	
 
-	//¹è¿­ aÀÌ ¿ä¼Ò °ªÀ» ³ªÅ¸³¿
+	//ë°°ì—´ aì´ ìš”ì†Œ ê°’ì„ ë‚˜íƒ€ëƒ„
 	static void print(int[]a) {
 		for(int i=0; i<a.length; i++) {
 		
@@ -22,14 +22,14 @@ public class ReverseArray {
 			System.out.println();
 	}
 		
-	//¿ª¼øÀ¸·Î Á¤·Ä
+	//ì—­ìˆœìœ¼ë¡œ ì •ë ¬
 	static void reverse(int[] a) {
 		
 		print(a);
 			
 		for(int i=0; i< a.length/2 ; i++) {
 	
-			System.out.println("a["+i+"]°ú "+ "a[" + (a.length-i-1) +"]¸¦ ±³È¯ÇÕ´Ï´Ù.");
+			System.out.println("a["+i+"]ê³¼ "+ "a[" + (a.length-i-1) +"]ë¥¼ êµí™˜!!");
 			swap(a, i , a.length-i-1 );
 			print(a);
 		}
@@ -42,7 +42,7 @@ public class ReverseArray {
 	
 		reverse(x);
 		
-		System.out.print("¿ª¼ø Á¤·ÄÀ» ¸¶ÃÆ½À´Ï´Ù.");
+		System.out.print("ì—­ìˆœ ì •ë ¬ì„ ë§ˆì³¤ìŠµë‹ˆë‹¤!");
 
 	}
 

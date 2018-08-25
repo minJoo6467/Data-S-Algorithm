@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ReverseArray {
 
-	//배열의 요소 a[idx1]와 a[idx2]를 교환
+	//배열의 요소 a[idx1]와 a[idx2]를 교환!!
 	static void swap(int[]a , int idx1, int idx2) {
 		int t = a[idx1]; 
 		a[idx1] = a[idx2]; 

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Sum {
 
-	static int sum(int x) {
+	static int sum(int x)  {
 		if(x <=1) {
 			return 1;
 		}else {
@@ -15,13 +15,13 @@ public class Sum {
 	}
 	public static void main(String[] args) {
 		
-		System.out.println("1ºÎÅÍ x±îÁöÀÇ ÇÕÀ» ±¸ÇÕ´Ï´Ù.");
+		System.out.println("1ë¶€í„° xê¹Œì§€ì˜ í•©ì„ êµ¬í•©ë‹ˆë‹¤.");
 		
 		Scanner scan = new Scanner(System.in);
 		
 		int x = scan.nextInt();
 		
-		System.out.println("1ºÎÅÍ " + x +"±îÁöÀÇ ÇÕÀº "+ sum(x));
+		System.out.println("1ë¶€í„° " + x +"ê¹Œì§€ì˜ í•©ì€ "+ sum(x));
 	}
 
 }

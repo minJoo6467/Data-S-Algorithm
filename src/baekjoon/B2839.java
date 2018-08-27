@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class B2839 {
 
 	public static void main(String[] args) {
-		
+		//ì„¤íƒ• ë°°ë‹¬ 
 		Scanner scan = new Scanner(System.in);
 		int N = scan.nextInt();
 		int three = 0; 
@@ -24,11 +24,11 @@ public class B2839 {
 				System.out.println(-1);
 			}else {
 				
-				five = N /5; //5·Î ³ª´©¾úÀ»¶§ ¸òÀÌ µé¾î°¨!
+				five = N /5; //5ë¡œ ë‚˜ëˆ„ì—ˆì„ë•Œ ëª«ì´ ë“¤ì–´ê°!
 				
 				result = three + five;
 				
-				System.out.println("ºÀÁöÀÇ ¼ö´Â? " + result);
+				System.out.println("ë´‰ì§€ì˜ ìˆ˜ëŠ”? " + result);
 			}
 			
 		}

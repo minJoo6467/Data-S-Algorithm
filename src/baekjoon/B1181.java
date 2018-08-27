@@ -44,6 +44,7 @@ public class B1181 {
 		
 		for(int i=0; i< set.size(); i++) {
 			System.out.println(arr[i]);
+			
 		}	
 	}
 }

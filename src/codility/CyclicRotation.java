@@ -1,4 +1,4 @@
-package org.min.codility;
+package codility;
 
 public class CyclicRotation {
 

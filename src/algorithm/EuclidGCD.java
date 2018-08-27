@@ -8,8 +8,8 @@ import java.io.OutputStreamWriter;
 
 public class EuclidGCD {
 
-	//À¯Å¬¸®µå Àç±ÍÇÔ¼ö
-	//ÀÔÃâ·Â : BufferedReader, BufferedWriter ÀÌ¿ëÇØº¸±â
+	//ìœ í´ë¦¬ë“œ ì¬ê·€í•¨ìˆ˜
+	//ì…ì¶œë ¥ : BufferedReader, BufferedWriter ì´ìš©í•´ë³´ê¸°
 	static int gcd(int x, int y) {
 		
 		if(y ==0) {
@@ -19,6 +19,8 @@ public class EuclidGCD {
 		}
 		
 	}
+	
+	//IOException í•´ì¤˜ì•¼í•¨
 	public static void main(String[] args) throws IOException {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -28,7 +30,7 @@ public class EuclidGCD {
 		
 		int y = Integer.parseInt(br.readLine());
 			
-		bw.write("ÃÖ´ë°ø¾à¼ö´Â " + gcd(x, y) + "ÀÔ´Ï´Ù.");
+		bw.write("ìµœëŒ€ê³µì•½ìˆ˜ëŠ” " + gcd(x, y) + "ì…ë‹ˆë‹¤.");
 		
 		bw.flush();
 		bw.close();

@@ -9,12 +9,6 @@ import java.util.Scanner;
 
 public class B1181 {
 	
-	static void swap(String[]a , int idx1, int idx2) {
-		String temp = a[idx1];
-		a[idx1] = a[idx2];
-		a[idx2] = temp;
-		
-	}
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);

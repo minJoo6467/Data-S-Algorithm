@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class B2839 {
 
 	public static void main(String[] args) {
-		//설탕 배달 
+    
+    //
 		Scanner scan = new Scanner(System.in);
 		int N = scan.nextInt();
 		int three = 0; 

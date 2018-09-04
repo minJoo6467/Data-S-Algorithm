@@ -9,6 +9,7 @@ public class B2558 {
 	//A + B -2
 	public static void main(String[] args) throws IOException{
 		
+		//Scanner에 비해 실행시간 단축 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int A = Integer.parseInt(br.readLine());

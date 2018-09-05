@@ -34,8 +34,7 @@ public class ReverseArray {
 			print(a);
 		}
 		
-	}
-	
+	} 
 	public static void main(String[] args) {
 	
 		int[] x = new int[]{5, 10, 73, 2, -5, 42};

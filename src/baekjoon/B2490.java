@@ -10,14 +10,14 @@ public class B2490 {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-		//3¹øÀÇ À·³îÀÌ start!
+		//3íšŒì „ ìœ·ë†€ì´ start!
 		for(int j=0; j <3; j++) {
 			
-			int count = 0; // ¹è(0)ÀÇ °³¼ö
+			int count = 0; // ë°°(0)ì˜ ê°œìˆ˜
 			
 			String[] input = br.readLine().split(" "); //ex : 0 1 0 1
 			
-			//¹è(0)ÀÇ °³¼ö ÆÇ´Ü ÈÄ , Áõ°¡
+			//ë°°(0)ì˜ ê°œìˆ˜ íŒë‹¨ í›„ , ì¦ê°€
 			for(int i=0; i < input.length; i++) {
 				
 				if(input[i].matches("0")) {
@@ -27,20 +27,20 @@ public class B2490 {
 		
 			switch(count) {
 			
-				case 0:	//¸ğµÎ 1ÀÎ°æ¿ì : ¸ğ(E)
+				case 0:	//ëª¨ë‘ 1ì¸ê²½ìš° : ëª¨(E)
 					System.out.println("E");
 					break;
 				case 1:
-					System.out.println("A"); //µµ(A)
+					System.out.println("A"); //ë„(A)
 					break;	
 				case 2:
-					System.out.println("B"); //°³(B)
+					System.out.println("B"); //ê°œ(B)
 					break;
 				case 3:
-					System.out.println("C"); //°É(C)
+					System.out.println("C"); //ê±¸(C)
 					break;
 				case 4:
-					System.out.println("D"); //À·(D)
+					System.out.println("D"); //ìœ·(D)
 					break;	
 			}
 		}

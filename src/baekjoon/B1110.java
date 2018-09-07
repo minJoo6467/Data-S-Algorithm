@@ -14,27 +14,27 @@ public class B1110 {
 		if(N>= 0 && N <=99) {
 				
 			int fresh = N; //26 
-			int cycle = 0; // cycle¼ö Ãâ·Â
+			int cycle = 0; // cycleìˆ˜ ì¶œë ¥ 
 	
 			
 			while(true) {
 	
-				int ten = N /10 % 10 ; // NÀÇ ½ÊÀÇÀÚ¸® 2 
-				int one = N % 10; // NÀÇ ÀÏÀÇÀÚ¸® 6
+				int ten = N /10 % 10 ; // Nì˜ ì‹­ì˜ìžë¦¬ 2 
+				int one = N % 10; // Nì˜ ì¼ì˜ìžë¦¬ 6
 				int total = (ten + one) % 10 ; //ex) 26, 2+6 =8 
 				
 				N = one *10 + total; // 68 
 				
 				cycle ++;
 	
-				//Ã³À½ 26ÀÌ¶û °°¾ÆÁö¸é..
+				//ì²˜ìŒ 26ì´ëž‘ ê°™ì•„ì§€ë©´..
 				if(fresh == N) {
 					break;
 				}
 				
 			}
 			
-			System.out.println("È¸Àü¼ö´Â? " + cycle);
+			System.out.println("íšŒì „ìˆ˜ëŠ”? " + cycle);
 		}
 	}
 }

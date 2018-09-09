@@ -14,7 +14,7 @@ public class B1181 {
 		Scanner scan = new Scanner(System.in);
 		int N = scan.nextInt();
 		
-		//Áßº¹Á¦°Å À§ÇØ¼­ HashSetÀÌ¿ë!
+		//ì¤‘ë³µì œê±° ìœ„í•´ì„œ HashSetì´ìš©!
 		HashSet<String> set = new HashSet<String>();
 	
 		for(int i=0; i< N; i++) {
@@ -23,17 +23,17 @@ public class B1181 {
 			
 		}
 		
-		System.out.println("set ?" +set); //Áßº¹µ¥ÀÌÅÍ Á¦°Å ÈÄ ´ã¾ÆÁÜ
+		System.out.println("set ?" +set); //ì¤‘ë³µë°ì´í„° ì œê±° í›„ ë‹´ì•„ì¤Œ
 		
 
 		String[]arr = new String[set.size()];
 		
 		set.toArray(arr);
 		
-		//¾ËÆÄºª ¼øÀ¸·Î Á¤·Ä
+		//ì•ŒíŒŒë²³ ìˆœìœ¼ë¡œ ì •ë ¬ ,sort
 		Arrays.sort(arr); 
 		
-		//±æÀÌ ¼ø Á¤·Ä
+		//ê¸¸ì´ ìˆœ ì •ë ¬
 		Arrays.sort(arr, (a1, a2) -> Integer.compare(a1.length(), a2.length()));
 		
 		for(int i=0; i< set.size(); i++) {

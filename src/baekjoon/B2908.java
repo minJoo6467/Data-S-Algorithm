@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class B2908 {
 
-	//
+	//a constant
 	public static void main(String[] args) {
 		
 		Scanner scan  = new Scanner(System.in);

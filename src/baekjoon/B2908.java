@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class B2908 {
 
+	//
 	public static void main(String[] args) {
 		
 		Scanner scan  = new Scanner(System.in);

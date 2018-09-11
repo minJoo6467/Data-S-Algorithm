@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class B1152 {
 
-	//À½°è
+	//
 	public static void main(String[] args) {
 		
 		Scanner scan  = new Scanner(System.in);

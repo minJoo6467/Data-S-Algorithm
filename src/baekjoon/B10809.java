@@ -4,33 +4,33 @@ import java.util.Scanner;
 
 public class B10809 {
 
-	//¾ËÆÄºª Ã£±â
+	//ì•ŒíŒŒë²³ ì°¾ê¸° 
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		String input = sc.next();          //ÀÔ·Â¹ŞÀ» ¹®ÀÚ¿­
-		char[] arr = input.toCharArray();  //charº¯È¯ ÈÄ, ¹è¿­¿¡ ´ã±â
+		String input = sc.next();          //ì…ë ¥ë°›ì„ ë¬¸ìì—´
+		char[] arr = input.toCharArray();  //charë³€í™˜ í›„, ë°°ì—´ì— ë‹´ê¸°
 		
 		
-		int[] output = new int[26]; //a~z ¹è¿­
+		int[] output = new int[26]; //a~z ë°°ì—´
 		
-		for(int i=0; i< output.length; i++) { //-1·Î ¹è¿­ ÃÊ±âÈ­
+		for(int i=0; i< output.length; i++) { //-1ë¡œ ë°°ì—´ ì´ˆê¸°í™”
 			output[i] = -1;
 		}
 		
 		
-		for(int j=0; j<arr.length; j++) { 	//arr¹è¿­ a~z°Ë»ç
+		for(int j=0; j<arr.length; j++) { 	//arrë°°ì—´ a~zê²€ì‚¬
 			int temp = arr[j]- 97;
 			
 			if(output[temp] == -1) {
-				output[temp] = j; //ÀÔ·Â¹ŞÀº ¹®ÀÚ¿­ÀÇ index¸¦ ´ã¾ÆÁÜ
+				output[temp] = j; //ì…ë ¥ë°›ì€ ë¬¸ìì—´ì˜ indexë¥¼ ë‹´ì•„ì¤Œ
 			}
 		}
 		
 		
 		for(int i=0; i<output.length; i++) {
-			System.out.print(output[i] + " "); //°ø¹éÀ¸·Î ±¸ºĞÇØ¼­ Ãâ·Â!!
+			System.out.print(output[i] + " "); //ê³µë°±ìœ¼ë¡œ êµ¬ë¶„í•´ì„œ ì¶œë ¥!!
 		}
 		
 	}

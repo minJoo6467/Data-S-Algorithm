@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class B10817 {
 
-	//Arrays.sort
+	//Arrays.sort   
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);

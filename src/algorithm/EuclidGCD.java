@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
 
 public class EuclidGCD {
 
-	//유클리드 재귀함수
+	//유클리드 재귀함수 
 	//입출력 : BufferedReader, BufferedWriter 이용해보기
 	static int gcd(int x, int y) {
 		

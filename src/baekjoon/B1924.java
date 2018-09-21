@@ -3,24 +3,25 @@ package baekjoon;
 import java.util.Scanner;
 
 public class B1924 {
-
+	
+	//today find
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		int x = sc.nextInt(); //¿ù
-		int y = sc.nextInt(); //ÀÏ
+		int x = sc.nextInt(); //Â¿Ã¹
+		int y = sc.nextInt(); //Ã€Ã
 		
 		int[] days = {31,28,31,30,31,30,31,31,30,31,30,31};
 		String[] dayday = {"SUN" , "MON", "TUE", "WED" ,"THU", "FRI" ,"SAT"};
 		
 		
-		int total = y; //total °è»ê
+		int total = y; //total Â°Ã¨Â»Ãª
 		for(int i=0;  i< x -1; i++) {
 			
 			total += days[i];
 			
 		}
 		
-		System.out.println("¿äÀÏÀº: " +dayday[total % 7]);
+		System.out.println("Â¿Ã¤Ã€ÃÃ€Âº: " +dayday[total % 7]);
 	}
 }

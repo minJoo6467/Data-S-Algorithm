@@ -2,7 +2,7 @@ package algorithm;
 
 import java.util.Scanner;
 
-public class Sum {
+public class Sum { 
 	//재귀함수를 이용하여 1부터 x까지의 합을 구하기
 	static int sum(int x)  {
 		if(x <=1) {

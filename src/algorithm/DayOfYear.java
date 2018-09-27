@@ -4,26 +4,26 @@ import java.util.Scanner;
 
 public class DayOfYear {
 
-	//°¢ ´ŞÀÇ ÀÏ¼ö
+	//ê° ë‹¬ì˜ ì¼ìˆ˜
 	static int[][] mdays = {
-			{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31},//Æò³â
-			{31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31},//À±³â
+			{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31},//í‰ë…„
+			{31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31},//ìœ¤ë…„
 			
 	};
 	
-	//¼­±â year³âÀº À±³âÀÎ°¡?(À±³â:1/ Æò³â:0)
+	//ì„œê¸° yearë…„ì€ ìœ¤ë…„ì¸ê°€?(ìœ¤ë…„:1/ í‰ë…„:0)
 	static int isLeap(int year) {
 		
 		return (year % 4 ==0 && year % 100 != 0 || year % 400 == 0 ) ? 1 : 0 ;
 	}
 	
 	
-	//±× ÇØ ³²Àº ÀÏ ¼ö ±¸ÇÏ±â
+	//ê·¸ í•´ ë‚¨ì€ ì¼ ìˆ˜ êµ¬í•˜ê¸°
 	static int leftDayOfYear(int y, int m, int d) {
 		
 		int days = d;
 		
-		for(int i=1; i < m; i++ ) { //1¿ùºÎÅÍ (m-1)¿ù±îÁö
+		for(int i=1; i < m; i++ ) { //1ì›”ë¶€í„° (m-1)ì›”ê¹Œì§€
 			
 			days += mdays[isLeap(y)][i -1];
 			
@@ -35,14 +35,14 @@ public class DayOfYear {
 
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("±× ÇØ ³²Àº ÀÏ¼ö¸¦ ±¸ÇÕ´Ï´Ù. ");
+		System.out.println("ê·¸ í•´ ë‚¨ì€ ì¼ìˆ˜ë¥¼ êµ¬í•©ë‹ˆë‹¤!!");
 		
 		
-		System.out.print("³â: "); int year = scan.nextInt();
-		System.out.print("¿ù: "); int month = scan.nextInt();
-		System.out.print("ÀÏ: "); int day = scan.nextInt();
+		System.out.print("ë…„: "); int year = scan.nextInt();
+		System.out.print("ì›”: "); int month = scan.nextInt();
+		System.out.print("ì¼: "); int day = scan.nextInt();
 			
-		System.out.printf("±× ÇØ ³²Àº ÀÏ¼ö´Â %dÀÏÀÔ´Ï´Ù.\n" ,leftDayOfYear(year, month, day));
+		System.out.printf("ê·¸ í•´ ë‚¨ì€ ì¼ìˆ˜ëŠ” %dì¼ì…ë‹ˆë‹¤.\n" ,leftDayOfYear(year, month, day));
 	}
 
 }

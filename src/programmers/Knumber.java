@@ -6,17 +6,15 @@ public class Knumber {
 	
 	public static void main(String[] args) {
 		
-		int[]array = {1,5,2,6,3,7,4}; //¼±¾ð¹è¿­
+		int[]array = {1,5,2,6,3,7,4}; //ì„ ì–¸ë°°ì—´
 		
-		int[][]commands = {{2,5,3},
-							{4,4,1},
-							{1,7,3}};
+		int[][]commands = {{2,5,3},{4,4,1},{1,7,3}};
 
 		int[] answer = new int[commands.length];
 		
 		int first, end, k;
 		
-		for(int i=0; i < commands.length; i++) { //Çà ±æÀÌ¸¸Å­ ¹Ýº¹
+		for(int i=0; i < commands.length; i++) { //í–‰ ê¸¸ì´ë§Œí¼ ë°˜ë³µ
 				
 				first = commands[i][0];  //2
 				end = commands[i][1]; //5
@@ -27,13 +25,13 @@ public class Knumber {
 				
 				for(int j = first -1; j < end; j++) {
 					
-					temp[cnt++] = array[j];  // firstºÎÅÍ end±îÁö temp¹è¿­¿¡ ´ã±â
+					temp[cnt++] = array[j];  // firstë¶€í„° endê¹Œì§€ tempë°°ì—´ì— ë‹´ê¸°
 				}
 				
-				Arrays.sort(temp); // ¿À¸§Â÷¼ø Á¤·Ä
-				answer[i] = temp[k-1];	// k¹øÂ° ¼ö °á°ú¹è¿­¿¡ ´ã±â
+				Arrays.sort(temp); // ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
+				answer[i] = temp[k-1];	// kë²ˆì§¸ ìˆ˜ ê²°ê³¼ë°°ì—´ì— ë‹´ê¸°
 		}
 		
-		System.out.println(Arrays.toString(answer)); // 5 6 3 Ãâ·Â
+		System.out.println(Arrays.toString(answer)); // 5 6 3 ì¶œë ¥
 	}
 }
